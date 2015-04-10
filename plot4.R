@@ -10,7 +10,7 @@ gfxData$FullDate = as.POSIXct(paste(as.Date(gfxData$Date),gfxData$Time)) ##Addin
 
 library(datasets)
 
-par(mfrow = c(2,2),mar=c(2,4,2,1.5),oma=c(0,0,0,0))
+par(mfrow = c(2,2),mar=c(4,4,2,0.5))
 
 # Draws 1st Graphs
 plot(gfxData$Global_active_power ~ gfxData$FullDate,type = "l",xlab = "", ylab = "Global Active Power (kilowatts)") 
